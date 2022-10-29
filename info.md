@@ -20,5 +20,6 @@ npm init
 npm install bootstrap
 npm i jquery
 
+npx tsc -init
 
 ```

@@ -16,4 +16,5 @@ $(function(){
     console.log(run);
     $(run).on("click",(e)=>{e.target.innerHTML = "Po klinięciu..."})
     console.log(run2);
+    document.querySelector("#timer").innerHTML = new Date().toLocaleDateString();
 });

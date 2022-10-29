@@ -51,7 +51,7 @@ const btn1 = document.querySelector("#btn1");
 btn1?.addEventListener("click", (e) => {
     //alert("sdsdsd");
     console.log(par);
-    //if(par!=null) 
-    par.innerHTML = "ala ma kota";
+    if (par != null)
+        par.innerHTML = "ala ma kota";
     //par?.innerHTML = "Ala ma kota";
 });

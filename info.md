@@ -12,3 +12,13 @@
 # NodeJs
 
 Strona główna: https://nodejs.org/en/
+
+## Instalowanie pakietów npm
+
+```console
+npm init
+npm install bootstrap
+npm i jquery
+
+
+```

@@ -19,7 +19,8 @@ Strona główna: https://nodejs.org/en/
 npm init
 npm install bootstrap
 npm i jquery
-
+//instalacja lokalna typescript
+npm i typescript --save-dev
 npx tsc -init
 
 ```

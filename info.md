@@ -24,3 +24,41 @@ npm i typescript --save-dev
 npx tsc -init
 
 ```
+
+### Zmiany w tsconfig
+
+```json
+{
+    "compilerOptions": {   
+    "target": "ES2022",  
+    "module": "ES6",                              
+     "rootDir": "./src",   
+     "outDir": "./dist",    
+    "esModuleInterop": true,  
+    "strict": true,  
+    "skipLibCheck": true                                
+  }
+}
+
+```
+
+### Zmiany w package.json
+
+```json
+{
+  "name": "xxx",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "module": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^4.8.2"
+  }
+}
+
+```

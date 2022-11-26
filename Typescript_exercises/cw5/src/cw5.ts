@@ -1,9 +1,9 @@
-import { Films, FilmInfo } from "./dane.js";
+import { Films, FilmInfo,People } from "./dane.js";
 
-console.log(Films);
-console.log(Films[0]);
-console.log(Films[0].release_date);
-console.log(Films[0].opening_crawl);
+//console.log(Films);
+console.log(People);
+
+
 const root = document.querySelector("#root");
 if(root !=null){
     root.innerHTML = getAll(Films);

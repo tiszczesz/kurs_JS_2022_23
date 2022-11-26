@@ -1,0 +1,8 @@
+.myFlex{
+    display: flex;
+    flex-wrap: wrap;
+}
+.myFlex>div{
+    width: 400px;
+    margin: 5px;
+}

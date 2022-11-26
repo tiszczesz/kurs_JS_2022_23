@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Informacje wstępne</h1>
+        <div class="row">
+            <div class="col-5">
+                <input type="button" class="btn btn-primary p-1 w-100 m-2" value="Wczytaj" id="load"><br>
+                <input type="button" class="btn btn-primary p-1 w-100 m-2" value="dodaj grę" id="addForm"><br>
+
+                <div id="form" class="invisible">
+                    <form>
+                        <div class="mb-3">
+                            <label for="title" class="form-label">Tytuł:</label>
+                            <input type="text" class="form-control" id="title" >                            
+                          </div>
+                          <div class="mb-3">
+                            <label for="price" class="form-label">Cena:</label>
+                            <input type="number" class="form-control" id="price" min="0" max="400" step="0.01">
+                          </div>
+                          <div class="mb-3">
+                            <label for="category" class="form-label">Kategoria:</label>
+                            <input type="text" class="form-control" id="category" >    
+                          </div>
+                          <button id="addToTable" type="submit" class="btn btn-primary w-100">Dodaj</button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-6" id="dane">
+                Tu będzie tabelka
+            </div>
+        </div>
+    </div>
+
+    <script src="cw4.js" defer type="module"></script>
+</body>
+</html>

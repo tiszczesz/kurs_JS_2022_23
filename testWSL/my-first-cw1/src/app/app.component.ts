@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'my-first-cw1';
+  currentDate = new Date().toLocaleDateString();
 }

@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./my-comp1.component.css']
 })
 export class MyComp1Component {
-
+  myTODO = ["ala ma kota","ssdssd","seetetete"];
 }

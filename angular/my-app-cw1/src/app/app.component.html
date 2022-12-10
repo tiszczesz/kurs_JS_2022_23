@@ -20,12 +20,10 @@
     consequatur blanditiis repellendus.
   </div>
   <div class="d-flex flex-wrap">
-    <app-my-card firstname="Adam" lastname="Nowak" klasa="3ti" > </app-my-card>
-    <app-my-card firstname="Monika" lastname="Nowak" klasa="3ti" > </app-my-card>
-    <app-my-card firstname="Ryszard" lastname="Nowak" klasa="1ti"> </app-my-card>
-    <app-my-card firstname="Tomasz" lastname="Hajduk" klasa="1ti"> </app-my-card>
-    <app-my-card firstname="Tomasz" lastname="Hajduk" klasa="1ti"> </app-my-card>
-    <app-my-card firstname="Tomasz" lastname="Hajduk" klasa="1ti"> </app-my-card>
-    <app-my-card firstname="Tomasz" lastname="Hajduk" klasa="1ti"> </app-my-card>
+    <app-my-card *ngFor="let u of users" 
+    firstname="{{u.firstname}}" 
+    lastname="{{u.lastname}}" 
+    klasa="{{u.klasa}}" > </app-my-card>
+    
   </div>
 </div>

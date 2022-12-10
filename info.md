@@ -62,3 +62,10 @@ npx tsc -init
 }
 
 ```
+
+## Angular informacje
+https://angular.io/
+
+narzędzie online (piaskownica):
+
+https://stackblitz.com/edit/angular-ivy-zrvkzc?file=src%2Fapp%2Fapp.component.ts

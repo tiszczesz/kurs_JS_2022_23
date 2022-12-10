@@ -9,7 +9,10 @@ import { Game } from './Game';
 export class AppComponent {
   addGame() {
     
-       this.games.push(new Game(this.gameTitle,this.gamePrice,this.gameCategory));
+       this.games.push(
+        new Game(this.gameTitle,
+          this.gamePrice,
+          this.gameCategory));
    
       
    

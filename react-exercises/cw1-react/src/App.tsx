@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import MyComponent from './Components/MyComponent';
 import Image from './Components/Image';
+import ClassComp from './Components/ClassComp';
 
 function App() {
   const name = "Alojzy";
@@ -18,8 +19,10 @@ function App() {
         wynik: {2 * 34 - 12} <br />
         data: {new Date().toLocaleDateString()}</div>
         <Image title='Ładny różowy motylek' myColor='green' />
+        <h3>Komponent Klasowy</h3>
+        <ClassComp firstname='Roman' lastname='Boman' />
     </div>
-
+    
 
 
 

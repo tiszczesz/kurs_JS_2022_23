@@ -72,3 +72,16 @@ https://stackblitz.com/edit/angular-ivy-zrvkzc?file=src%2Fapp%2Fapp.component.ts
 
 ### Dzielenie informacji między komponentami:
 https://angular.io/guide/inputs-outputs
+
+## React  Informacje renderowanie po stronie klienta
+
+### dokumentacja https://pl.reactjs.org/
+
+### playground online:
+https://codepen.io/pen?&editors=0010&layout=left
+
+
+
+## Next.js renderowanie po stronie serwera
+
+https://nextjs.org/

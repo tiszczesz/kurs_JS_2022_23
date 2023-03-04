@@ -1,0 +1,29 @@
+<div class="container bordered">
+  <div class="row">
+    <h1 class="col-6">Witamy z aplikacji</h1>
+    <div class="p-2 offset-2 col-4"><app-my-first></app-my-first></div>
+  </div>
+
+  <h3>
+    Nazwa apliacji <span class="title">{{ title }}</span>
+  </h3>
+  <div>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam natus
+    ipsam, placeat rem blanditiis porro perferendis. Sequi maxime aspernatur
+    corrupti, adipisci excepturi veniam delectus obcaecati recusandae itaque
+    consequatur blanditiis repellendus.
+  </div>
+  <div>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam natus
+    ipsam, placeat rem blanditiis porro perferendis. Sequi maxime aspernatur
+    corrupti, adipisci excepturi veniam delectus obcaecati recusandae itaque
+    consequatur blanditiis repellendus.
+  </div>
+  <div class="d-flex flex-wrap">
+    <app-my-card *ngFor="let u of users" 
+    firstname="{{u.firstname}}" 
+    lastname="{{u.lastname}}" 
+    klasa="{{u.klasa}}" > </app-my-card>
+    
+  </div>
+</div>

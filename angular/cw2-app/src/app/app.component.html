@@ -1,0 +1,38 @@
+<div class="container">
+  <h1>Moje gry</h1>
+  <div class="upper">
+    <div>Dzisiaj mamy: {{ currentDate }}</div>
+    <div>Ilość gier: {{ games.length }}</div>
+  </div>
+  <ul>
+    <li *ngFor="let g of games">
+      Tytuł: <span class="info">{{ g.title }}</span> Cena:
+      <span class="info">{{ g.price }}PLN</span> Kategoria:
+      <span class="info">{{ g.category }}</span>
+    </li>
+  </ul>
+  <div>
+    <input
+      #inputTitle
+      type="text"
+      placeholder="Tytuł"
+      
+      (input)="onInputTitle(inputTitle.value)"
+    /><br />
+    <input
+      #inputPrice
+      
+      (input)="onInputPrice(inputPrice.value)"
+      type="number"
+      placeholder="Cena"
+    /><br />
+    <input
+      #inputCategory
+     
+      (input)="onInputCategory(inputCategory.value)"
+      type="text"
+      placeholder="Kategoria"
+    /><br />
+    <button (click)="addGame()">Dodaj grę</button>
+  </div>
+</div>

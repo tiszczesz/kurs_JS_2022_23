@@ -80,7 +80,11 @@ https://angular.io/guide/inputs-outputs
 ### playground online:
 https://codepen.io/pen?&editors=0010&layout=left
 
+### Tworzenie aplikacji z typescriptem
 
+```console
+  npx create-react-app nowa-app --template typescript
+```
 
 ## Next.js renderowanie po stronie serwera
 

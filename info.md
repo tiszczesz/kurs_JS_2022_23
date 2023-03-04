@@ -69,3 +69,6 @@ https://angular.io/
 narzędzie online (piaskownica):
 
 https://stackblitz.com/edit/angular-ivy-zrvkzc?file=src%2Fapp%2Fapp.component.ts
+
+### Dzielenie informacji między komponentami:
+https://angular.io/guide/inputs-outputs

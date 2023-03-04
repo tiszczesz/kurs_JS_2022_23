@@ -1,0 +1,5 @@
+<p>first works!</p>
+<div>Aktualny czas {{ currentTime }}</div>
+<div [innerHTML]="'akutalny czas: ' + currentTime" ></div>
+<input type="button" (click)="run($event)" value="Wykonaj"><br/>
+<input type="text" [(ngModel)]="valueFromInput">

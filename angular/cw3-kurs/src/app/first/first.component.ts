@@ -12,6 +12,7 @@ export class FirstComponent {
   red:number=100;
   green:number=100;
   blue:number=100;
+  
 
   constructor() {
     this.updateTime();

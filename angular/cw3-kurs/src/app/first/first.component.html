@@ -4,6 +4,7 @@
 <input type="button" (click)="run($event)" value="Wykonaj" /><br />
 <input type="text" [(ngModel)]="valueFromInput" />
 <span>{{ valueFromInput }}</span> <br />
-<input type="range" min="0" max="255"/> <span style='color:red'>Czerwony: {{ red }}</span> <br />
-<input type="range" min="0" max="255" /> <span style='color:green'>Zielony {{ green }}</span> <br />
-<input type="range" min="0" max="255"/> <span style='color:blue'>Niebieski {{ blue }}</span> <br />
+<input type="range" min="0" max="255" [(ngModel)]="red"/> <span style='color:red'>Czerwony: {{ red }}</span> <br />
+<input type="range" min="0" max="255" [(ngModel)]="green"/> <span style='color:green'>Zielony {{ green }}</span> <br />
+<input type="range" min="0" max="255" [(ngModel)]="blue"/> <span style='color:blue'>Niebieski {{ blue }}</span> <br />
+<div class="scene" [style.background-color]="'rgb('+red+','+green+','+blue+')'" >rgb({{red}},{{green}},{{blue}})</div>

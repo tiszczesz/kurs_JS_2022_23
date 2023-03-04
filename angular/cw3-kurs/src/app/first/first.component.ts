@@ -6,12 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./first.component.css']
 })
 export class FirstComponent {
+change(event:Event) {
+  this.choice = (event.target as HTMLInputElement).value;
+}
 
   currentTime: string = new Date().toLocaleTimeString();
   valueFromInput:string="";
   red:number=100;
   green:number=100;
   blue:number=100;
+  choice: string="";
   
 
   constructor() {

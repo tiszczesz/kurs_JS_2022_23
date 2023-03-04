@@ -7,4 +7,13 @@
 <input type="range" min="0" max="255" [(ngModel)]="red"/> <span style='color:red'>Czerwony: {{ red }}</span> <br />
 <input type="range" min="0" max="255" [(ngModel)]="green"/> <span style='color:green'>Zielony {{ green }}</span> <br />
 <input type="range" min="0" max="255" [(ngModel)]="blue"/> <span style='color:blue'>Niebieski {{ blue }}</span> <br />
-<div class="scene" [style.background-color]="'rgb('+red+','+green+','+blue+')'" >rgb({{red}},{{green}},{{blue}})</div>
+<div class="scene" [style.background-color]="'rgb('+red+','+green+','+blue+')'" ><span>rgb({{red}},{{green}},{{blue}})</span></div>
+<div>
+    <select [ngModel]="choice" (change)="change($event)">
+        <option value="jeden">jeden</option>
+        <option value="dwa">dwa</option>
+        <option value="trzy">trzy</option>
+        <option value="cztery">cztery</option>
+    </select>
+</div>
+<div>{{choice}}</div>

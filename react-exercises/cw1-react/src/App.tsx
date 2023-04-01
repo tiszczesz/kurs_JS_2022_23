@@ -5,6 +5,7 @@ import './App.css';
 import MyComponent from './Components/MyComponent';
 import Image from './Components/Image';
 import ClassComp from './Components/ClassComp';
+import CompSecond from './Components/CompSecond';
 
 function App() {
   const name = "Alojzy";
@@ -21,6 +22,8 @@ function App() {
         <Image title='Ładny różowy motylek' myColor='green' />
         <h3>Komponent Klasowy</h3>
         <ClassComp firstname='Roman' lastname='Boman' />
+        <ClassComp firstname='Antoni' lastname='Grucek' />
+        <CompSecond myName='Franciszek' age={45}/>
     </div>
     
 

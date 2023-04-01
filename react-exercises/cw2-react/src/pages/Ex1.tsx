@@ -13,12 +13,23 @@ function Ex1() {
     <>
     <h1>Ćwiczenie 1</h1>
     <h3>Zbiór kontaktów</h3>
-    <div>
-        <input type="text" placeholder='dodaj kontakt' onChange={(e)=>{
+    <div className='row gap-2'>
+        <input className='col-2' type="text" placeholder='dodaj imię' onChange={(e)=>{
             console.log(e.target.value);
             setText(e.target.value);
             console.log(`text = ${text}`);            
             }} />
+             <input className='col-2' type="text" placeholder='dodaj nazwisko' onChange={(e)=>{
+            console.log(e.target.value);
+            setText(e.target.value);
+            console.log(`text = ${text}`);            
+            }} />
+             <input className='col-2' type="text" placeholder='dodaj email' onChange={(e)=>{
+            console.log(e.target.value);
+            setText(e.target.value);
+            console.log(`text = ${text}`);            
+            }} />
+             <input  className='btn btn-secondary col-3' type='button' value="Zapisz" />
         <div>{text}</div>
     </div>
     <ul className='list-group'>

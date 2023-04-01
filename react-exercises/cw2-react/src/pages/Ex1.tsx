@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { GetAll,Contact } from '../models/Dane';
-
+import  myDelete  from '../delete.png';
 
 //type Props = {}
 const initialContacts = GetAll();
@@ -48,7 +48,10 @@ function Ex1() {
     <ul className='list-group'>
         {contacts.map((elem)=>
              (
-                <li className='list-group-item' key={elem.firstName}>{elem.firstName} {elem.lastName} {elem?.email} </li>
+                <li className='list-group-item d-flex justify-content-between' key={elem.firstName}>
+                    <div className='w-80'>{elem.firstName} {elem.lastName} {elem?.email}</div> 
+                <img className='btn btn-light p-0' style={{height:25}}  src={myDelete} alt='kosz'/>
+                </li>
             )
         )}
     </ul>

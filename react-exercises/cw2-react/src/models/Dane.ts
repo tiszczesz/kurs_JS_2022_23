@@ -8,5 +8,6 @@ export function GetAll():Array<Contact>{
         new Contact("Jerzy","Zbereży","jj@gmail.com"),
         new Contact("Roman","Boman","rb@gmail.com"),
         new Contact("Renata","Edwińska"),
+        new Contact("Marzena","Rybnicka"),
     ]
 }
